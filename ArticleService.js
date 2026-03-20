@@ -29,3 +29,23 @@ function createArticle(title, content, image) {
     }),
   });
 }
+
+function patchArticle(articleId, title, content, image) {
+  fetch(`${BASE_URL}/${articleId}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      title: title,
+      content: content,
+      image: image,
+    }),
+  });
+}
+
+function deleteArticle(articleId) {
+  fetch(`${BASE_URL}/${articleId}`, {
+    method: "DELETE",
+  });
+}
