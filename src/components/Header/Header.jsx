@@ -8,13 +8,22 @@ function Header() {
       <div className="inner">
         <div className="header-left">
           <img src={logo} alt="판다마켓" />
+
+          <nav className="nav">
+            <ul>
+              <li>
+                <Link to="/community">자유게시판</Link>
+              </li>
+              <li>
+                <Link to="/">중고마켓</Link>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <li>자유게시판</li>
-        <li>중고마켓</li>
+        <Link to="/login" className="login-btn">
+          로그인
+        </Link>
       </div>
-      <Link to="/login" className="login-btn">
-        로그인
-      </Link>
     </header>
   );
 }
