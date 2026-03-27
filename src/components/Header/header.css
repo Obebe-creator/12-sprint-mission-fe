@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: var(--header-h);
+  height: 64px;
   background: #fff;
   border-bottom: 1px solid #dfdfdf;
   position: sticky;
@@ -13,8 +13,8 @@
 
 .header .inner {
   width: 100%;
-  max-width: var(--container-max);
-  padding: 0 var(--pad-x-xl);
+  max-width: 1200px;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +36,7 @@
 
 .logo img {
   width: auto;
-  max-width: var(--logo-max);
+  max-width: 150px;
   display: block;
 }
 
@@ -57,10 +57,10 @@
 
 .login-btn {
   padding: 0.75rem 1.4375rem;
-  border-radius: var(--radius-sm);
-  background: var(--color-primary);
-  color: var(--color-white);
-  font-size: 1rem;
+  border-radius: 8px;
+  background: var(--color-primary-100);
+  color: white;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
 }
