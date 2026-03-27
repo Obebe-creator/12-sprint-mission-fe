@@ -1,0 +1,10 @@
+:root {
+  /* Color */
+  /* Primary */
+  --color-primary-100: #3692ff;
+  --color-primary-200: #1967d6;
+  --color-primary-300: #1251aa;
+
+  /* Error */
+  --color-error: #f74747;
+}

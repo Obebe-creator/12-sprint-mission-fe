@@ -7,8 +7,9 @@ function Header() {
     <header className="header">
       <div className="inner">
         <div className="header-left">
-          <img src={logo} alt="판다마켓" />
-
+          <Link to="/" className="logo">
+            <img src={logo} alt="판다마켓" />
+          </Link>
           <nav className="nav">
             <ul>
               <li>
